@@ -9,7 +9,7 @@
 5. Add properties and compose methods on a custom class.
 6. Use `#import` to give another class knowledge of a custom class.
 7. Interact with an instance of a custom class from another class file.
-8. Add a custom class as a property on another class.
+8. Add a custom class as a property on another class, use the `self.` keyword to interact with it.
 
 ## Class Libraries
 
