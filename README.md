@@ -51,11 +51,13 @@ Prefixes are important in Objective-C so build the habit of using them early. Be
 
 Despite the plethora of class files available to us, solving any specific problem typically requires creating at least a few custom classes to tailor-fit our code to the current situation. None of the Apple libraries include, for example, a `Warship` class, nor a `ToySoldier` class, nor a `ChessBoard` class. In order to build an application that requires a representation of one of these objects, we would have to create a custom class to hold the data (properties) and perform the behaviors (methods) that the representation requires.
 
+Every [application program]() addresses some problem or set of problems that are relevant to some aspect of life—this actually is the etymology of calling a program an "application", because it has a *real-world application*. Within the context of an application program, some custom modeling will need to be done. The [system software](https://en.wikipedia.org/wiki/System_software) that supports [application software](https://en.wikipedia.org/wiki/Application_software) cannot possibly anticipate the needs of every application: a shopping cart application will need to model a cart and an item, a music player will need to model a song and a playlist, a flight simulator will need to model an airplane and a runway. It is our job as the developer to anticipate the needs of the application presented to us and to create those customized models when writing the application program.
+
 Creating a custom class is called "subclassing" and as a practice relies heavily on the concept of inheritance. Since we're not going to discuss the concept of inheritance until later, right now we're only going to subclass from `NSObject`—the most basic object of all of the objects; even it's name is boring.
 
-**//Flat-fact:** *The word "ponso" is derived from the acronym PONSO meaning "Plain Old NSObject".*
+**//Flat-fact:** *You may see the word "ponso" online; it is derived from the acronym PONSO meaning "Plain Old NSObject".*
 
-Despite being rudimentary, this is actually quite common in programming. `NSObject` provides a blank slate to start with when defining what properties and methods a class should contain.
+Despite being rudimentary, this is actually quite common in programming. `NSObject` provides a (nearly) blank slate to start with when defining what properties and methods a class should contain.
 
 ## Generate A New Pair Of Class Files
 
@@ -109,7 +111,9 @@ The `#import` keyword is used to give your class files knowledge of other class 
 @end
 ```
 
-You may notice that library was imported using angle brackets (`<` `>`) while the individual header file was imported using double quotes (`"` `"`). This is a standard syntax for distinction: each library has its own library header file that simply contains all of the header files for every class in the library.
+You may have noticed that the library was imported using angle brackets (`<` `>`) while the individual header file was imported using double quotes (`"` `"`). This is a standard syntax for distinction: code specifically belonging to the current application (i.e. code that you wrote) is imported using double quotes (`"` `"`), while code *not* specific to the current application (i.e. code that you *didn't* write) is imported using angle brackets (`<` `>`).
+
+**Advanced:** *Each library has its own library header file (with no associated implementation file) that simply contains all of the header files for every class in the library. So, to import the entire framework in it's entirety, the library header is used instead of individual class headers because they often have dependencies on other classes within their native library.*
 
 So, in order for our `FISAppDelegate` class to have knowledge of the `FISWarship` class, we'll need to import the `FISWarship.h` header file into the `FISAppDelegate.m` implementation file.
 
