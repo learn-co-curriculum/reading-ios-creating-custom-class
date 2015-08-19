@@ -176,9 +176,10 @@ Now that we have our class file, we can fill it out with the properties and meth
 Once another class has knowledge of our new custom class (i.e. has been given an `#import` statement for our new custom class), we can create an instance of our custom class:
 
 ```objc
-// FISAppDelegat.m
+// FISAppDelegate.m
 
 #import "FISAppDelegate.h"
+#import "FISWarship.h"
 
 @implementation FISAppDelegate
 
@@ -193,7 +194,7 @@ Once another class has knowledge of our new custom class (i.e. has been given an
 Then set its properties and call its methods:
 
 ```objc
-// FISAppDelegat.m
+// FISAppDelegate.m
 
 #import "FISAppDelegate.h"
 #import "FISWarship.h"
