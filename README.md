@@ -294,3 +294,5 @@ Speed: 33 knots
 Now, bring us that horizon!
 
 ![](https://curriculum-content.s3.amazonaws.com/ios/ios-intro-to-objects-unit/ios-intro-to-objects-unit/drink_up_me_hearties.gif)
+
+<a href='https://learn.co/lessons/reading-ios-creating-custom-class' data-visibility='hidden'>View this lesson on Learn.co</a>
