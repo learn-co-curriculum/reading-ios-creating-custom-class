@@ -295,4 +295,4 @@ Now, bring us that horizon!
 
 ![](https://curriculum-content.s3.amazonaws.com/ios/ios-intro-to-objects-unit/ios-intro-to-objects-unit/drink_up_me_hearties.gif)
 
-<a href='https://learn.co/lessons/reading-ios-creating-custom-class' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/reading-ios-creating-custom-class' title='Creating A Custom Class'>Creating A Custom Class</a> on Learn.co and start learning to code for free.</p>
