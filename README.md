@@ -13,7 +13,7 @@
 
 ## Class Libraries
 
-In Object-Oriented Programming (OOP), the library of available objects is as much a part of the language as the syntax itself. Without a library of objects to "instantiate" (i.e. to create on instance of), an object-oriented language would be like having grammar but no vocabulary—there exists the structure of a language, but nothing to actually communicate with.
+In Object-Oriented Programming (OOP), the library of available objects is as much a part of the language as the syntax itself. Without a library of objects to "instantiate" (i.e. to create an instance of), an object-oriented language would be like having grammar but no vocabulary—there exists the structure of a language, but nothing to actually communicate with.
 
 In Objective-C, individual libraries are called "frameworks". So far, you've worked exclusively with objects from the Core Foundation library. The vast majority of foundation framework classes are prepended with the `NS` prefix which stands for "NeXTSTEP". This was the computer product engineered by the "NeXT" company who developed the Core Foundation library in the late 1980s, building it with the [Objective-C][objective-c] language syntax created by [Brad Cox][brad_cox] in the early 1980s.
 
